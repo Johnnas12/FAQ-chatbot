@@ -1,0 +1,15 @@
+# Python files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyc
+
+# Meta language files
+*.meta
+*.metta
+/${cfgdir}
+/backend/${cfgdir}
