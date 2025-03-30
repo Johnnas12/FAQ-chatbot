@@ -13,6 +13,10 @@ class KnowledgeUpdate(BaseModel):
     question: str
     answer: str
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to domain specific chatbot Knowledge Graph API!🚀"}
+
 @app.post("/chat")
 async def chat(request: QuestionRequest):
     response = query_knowledge_graph(request.question)
