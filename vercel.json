@@ -6,10 +6,21 @@
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "50mb",
-          "runtime": "python3.9"  
+          "runtime": "python3.12"
         }
       }
     ],
+    "build": {
+      "env": {
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PIP_NO_CACHE_DIR": "off"
+      },
+      "commands": [
+        "pip install --upgrade pip",
+        "pip install --upgrade setuptools wheel",
+        "pip install -r backend/requirements.txt"
+      ]
+    },
     "routes": [
       {
         "src": "/(.*)",
