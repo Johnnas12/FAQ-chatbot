@@ -3,3 +3,4 @@ uvicorn
 metta
 google-generativeai
 python-dotenv
+pydantic
