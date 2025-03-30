@@ -74,6 +74,16 @@ curl -X 'POST' \
 }
 ```
 
+### **Real Time Updating Knowldge Graph**
+```sh
+curl -X 'POST' \
+  'http://127.0.0.1:8000/update_knowledge' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "question": "who is yohanes",
+  "answer": "Software Engineer, An AI Enthusiat his grihub repo is https:github/johnnas12 "
+}'
+```
 ---
 
 ## 📝 Extending the Knowledge Base
