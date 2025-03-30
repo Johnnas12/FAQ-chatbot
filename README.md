@@ -60,9 +60,12 @@ The API will now be running at **http://127.0.0.1:8000** 🎉
 
 ## 🔥 Usage
 ### **Querying the FAQ Chatbot**
-#### **Make a GET request to the API:**
+#### **Make a POST request to the API:**
 ```sh
-curl "http://127.0.0.1:8000/chat?question=What%20is%20AI"
+curl -X 'POST' \
+  'http://127.0.0.1:8000/chat' \
+  -H 'Content-Type: application/json' \
+  -d '{"question": "What is AI?"}'
 ```
 #### **Expected JSON Response:**
 ```json
