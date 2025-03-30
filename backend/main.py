@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from knowledge_graph import query_knowledge_graph, update_knowledge
+from .knowledge_graph import query_knowledge_graph, update_knowledge
 from pydantic import BaseModel
 
 
