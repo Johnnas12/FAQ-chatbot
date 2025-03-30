@@ -13,3 +13,4 @@ build/
 *.metta
 /${cfgdir}
 /backend/${cfgdir}
+.env
