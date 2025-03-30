@@ -34,6 +34,10 @@ def query_knowledge_graph(question: str) -> str:
             return result
         return generate_rag_response(question)
     
+def update_knowledge(question: str, answer: str):
+    new_faq = f'(FAQ "{question}" "{answer}")'
+    engine.run(new_faq)
+    
 
 def generate_rag_response(question: str) -> str:
     """Use Gemini to generate an answer when the knowledge graph has no answer."""
