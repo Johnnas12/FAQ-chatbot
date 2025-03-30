@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-metta
+hyperon==0.2.2
 google-generativeai
 python-dotenv
 pydantic
